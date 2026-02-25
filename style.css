@@ -1,0 +1,100 @@
+/* Import new font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;   /* Changed font */
+    background: #f4f4f4;
+    padding: 40px 0;
+}
+
+/* Change ALL icons color to turquoise */
+i {
+    color: turquoise;
+}
+
+/* Resume container */
+.resume {
+    width: 900px;
+    margin: 60px auto;      /* Adds space top & bottom */
+    background: white;
+    border-collapse: collapse;
+    padding: 60px;          /* Increased internal padding */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Optional subtle elevation */
+    border-radius: 8px;     /* Optional smooth corners */
+}
+.resume td {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.role {
+    margin: 5px 0;
+}
+
+.contact {
+    font-size: 14px;
+}
+
+/* Section titles */
+.section-title {
+    width: 150px;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 15px 10px 15px 0;
+}
+
+/* REMOVE inside horizontal lines */
+.divider td {
+    border-bottom: 1px solid #ccc;   /* clean horizontal line */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Remove line from the last section (References) */
+.resume tr:last-child td {
+    border-bottom: none;
+}
+
+/* Inner table */
+.inner-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.date {
+    text-align: right;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+ul {
+    margin: 10px 0 0 20px;
+}
+
+/* Proper equal spacing for LinkedIn, GitHub, StackOverflow */
+.icons2 {
+    display: flex;
+    gap: 40px;              /* Equal spacing */
+    align-items: center;
+}
+
+/* Add spacing between icon and text */
+.icons2 i {
+    margin-right: 8px;
+}
+
+/* Certificate section spacing */
+.divider:last-of-type td b {
+    margin-right: 40px;     /* Space between both certificates */
+}
